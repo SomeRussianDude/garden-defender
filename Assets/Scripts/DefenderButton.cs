@@ -5,9 +5,14 @@ using UnityEngine;
 
 public class DefenderButton : MonoBehaviour
 {
+
+    [SerializeField] private Defender defenderPrefab;
+    
+    
     private void OnMouseDown()
     {
         ButtonSelected();
+        FindObjectOfType<DefenderSpawner>().SetSelectedDefender(defenderPrefab);
     }
 
     private void ButtonSelected()

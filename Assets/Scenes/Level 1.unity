@@ -302,6 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff2617d60fe8c4346ae6aa462797abf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defenderPrefab: {fileID: 4304449516014792822, guid: 834c57ebc19c84948a8718147aeec248, type: 3}
 --- !u!61 &942338295
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -315,18 +316,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.02386123, y: -0.059653223}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.94499993, y: 1.1502529}
+    oldSize: {x: 0.756, y: 0.9202024}
     newSize: {x: 0.94499993, y: 1.1502529}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.94499993, y: 1.1502529}
+  m_Size: {x: 1.3745035, y: 1.2695595}
   m_EdgeRadius: 0
 --- !u!212 &942338296
 SpriteRenderer:
@@ -829,6 +830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff2617d60fe8c4346ae6aa462797abf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defenderPrefab: {fileID: 7718961756694279367, guid: b82e793412ade8149bd7d84615ff44e8, type: 3}
 --- !u!61 &2130530213
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -842,7 +844,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.023577735, y: -0.029471934}
+  m_Offset: {x: 0.054184914, y: 0.011337757}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -853,7 +855,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.88162446, y: 0.78105617}
+  m_Size: {x: 1.2285068, y: 1.0259144}
   m_EdgeRadius: 0
 --- !u!1001 &971867061279124894
 PrefabInstance:
