@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &141900351
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4108150516427970400, guid: e68190fe215ef7048b381c1f23491104, type: 3}
+      propertyPath: m_Name
+      value: Lizard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108150516427970407, guid: e68190fe215ef7048b381c1f23491104, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108150516427970407, guid: e68190fe215ef7048b381c1f23491104, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108150516427970407, guid: e68190fe215ef7048b381c1f23491104, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108150516427970407, guid: e68190fe215ef7048b381c1f23491104, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108150516427970407, guid: e68190fe215ef7048b381c1f23491104, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108150516427970407, guid: e68190fe215ef7048b381c1f23491104, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108150516427970407, guid: e68190fe215ef7048b381c1f23491104, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108150516427970407, guid: e68190fe215ef7048b381c1f23491104, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108150516427970407, guid: e68190fe215ef7048b381c1f23491104, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108150516427970407, guid: e68190fe215ef7048b381c1f23491104, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108150516427970407, guid: e68190fe215ef7048b381c1f23491104, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e68190fe215ef7048b381c1f23491104, type: 3}
 --- !u!1001 &265327862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -195,6 +252,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6614622326512181138, guid: ed5f0d291de96e542842ca35c2113c7e, type: 3}
   m_PrefabInstance: {fileID: 1545781414}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &898220975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 946788420121580181, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
+  m_PrefabInstance: {fileID: 6981162531573205791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &898220977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898220975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07696db99715ca148a57c598044aefdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &898916059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6614622326512181138, guid: ed5f0d291de96e542842ca35c2113c7e, type: 3}
@@ -1039,6 +1113,58 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2338102288084212534, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 318.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338102288084212534, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 115.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338102288084212534, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 560.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338102288084212534, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -482.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009817143483054747, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009817143483054747, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009817143483054747, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009817143483054747, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009817143483054747, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: c68f7436711393b4ab0ebc7cd4d05a4f, type: 3}
+    - target: {fileID: 3009817143483054747, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 206
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009817143483054747, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009817143483054747, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009817143483054747, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6981162532333426267, guid: 763f1281f3437fc42b33f1fb461e79e0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
