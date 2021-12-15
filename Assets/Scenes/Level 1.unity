@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07696db99715ca148a57c598044aefdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinBalance: 1000
 --- !u!4 &898916059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6614622326512181138, guid: ed5f0d291de96e542842ca35c2113c7e, type: 3}
@@ -959,7 +960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3171860471178009954, guid: 253231e1d495d3448b44af91b505fc69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3171860471178009954, guid: 253231e1d495d3448b44af91b505fc69, type: 3}
       propertyPath: m_LocalRotation.w
