@@ -22,6 +22,11 @@ public class CoinDisplay : MonoBehaviour
         coinText.text = coinBalance.ToString();
     }
 
+    public bool HaveEnoughCoins(int cost)
+    {
+        return coinBalance >= cost;
+    }
+
     public void AddCoins(int cost)
     {
         coinBalance += cost;
