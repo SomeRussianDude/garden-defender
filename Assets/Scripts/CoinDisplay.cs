@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CoinDisplay : MonoBehaviour
 {
-    private int coinBalance = 100;
+    [SerializeField] private int coinBalance = 100;
 
     public int CoinBalance => coinBalance;
 

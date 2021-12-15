@@ -225,8 +225,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 2038612007}
     m_Modifications:
     - target: {fileID: 385828927, guid: ed5f0d291de96e542842ca35c2113c7e, type: 3}
+      propertyPath: maxTimeToSpawn
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 385828927, guid: ed5f0d291de96e542842ca35c2113c7e, type: 3}
       propertyPath: minTimeToSpawn
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6614622326512181138, guid: ed5f0d291de96e542842ca35c2113c7e, type: 3}
       propertyPath: m_RootOrder
