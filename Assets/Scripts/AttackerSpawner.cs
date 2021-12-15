@@ -22,7 +22,9 @@ public class AttackerSpawner : MonoBehaviour
 
     private void SpawnEnemies()
     {
-        Instantiate(attackerPrefab, transform.position, transform.rotation);
+       Attacker newAttacker = Instantiate
+           (attackerPrefab, transform.position, transform.rotation);
+       newAttacker.transform.parent = transform;
     }
 
 
