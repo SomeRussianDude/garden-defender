@@ -17,9 +17,17 @@ public class Attacker : MonoBehaviour
    void Update()
     {
         Move();
+        UpdateAnimationState();
     }
 
-    private void Move()
+   private void UpdateAnimationState()
+   {
+       if (!currentTarget)
+       {
+           animator.SetBool("isAttacking", false);
+       }   }
+
+   private void Move()
     {
         transform.Translate(Vector2.left * walkSpeed * Time.deltaTime);
     }
@@ -33,5 +41,19 @@ public class Attacker : MonoBehaviour
     {
         animator.SetBool("isAttacking", true);
         currentTarget = target;
+    }
+
+    public void StrikeCurrentTarget(float damage)
+    {
+        if (!currentTarget)
+        {
+            return;
+        }
+
+        Health health = currentTarget.GetComponent<Health>();
+        if (health)
+        {
+            health.DealDamage(damage);
+        }
     }
 }
