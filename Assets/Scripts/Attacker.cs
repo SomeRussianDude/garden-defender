@@ -1,12 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
-    [SerializeField] private float walkSpeed = 1f;
+   [Range (0f, 5f)] [SerializeField] private float walkSpeed = 1f;
+   private GameObject currentTarget;
+   private Animator animator;
 
-    void Update()
+   private void Start()
+   {
+       animator = GetComponent<Animator>();
+   }
+
+   void Update()
     {
         Move();
     }
@@ -19,5 +27,11 @@ public class Attacker : MonoBehaviour
     public void SetMovementSpeed(float speed)
     {
         walkSpeed = speed;
+    }
+
+    public void Attack(GameObject target)
+    {
+        animator.SetBool("isAttacking", true);
+        currentTarget = target;
     }
 }

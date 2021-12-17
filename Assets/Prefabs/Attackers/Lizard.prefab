@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: -6272246588971566956}
   - component: {fileID: 759680818025124753}
   - component: {fileID: 1597579653}
+  - component: {fileID: -2668754862618540263}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Untagged
@@ -162,10 +163,10 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.4840293, y: 0.17578185}
+  m_Offset: {x: -0.4840293, y: 0}
   serializedVersion: 2
   m_Radius: 0.41704977
 --- !u!114 &-6272246588971566956
@@ -254,6 +255,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2668754862618540263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108150516427970400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01dff2c656aaa74fb2bec8b71dc113a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8271956734914474843
 GameObject:
   m_ObjectHideFlags: 0
