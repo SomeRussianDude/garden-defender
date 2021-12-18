@@ -7,10 +7,12 @@ public class Gravestone : MonoBehaviour
 {
     private void OnTriggerStay2D(Collider2D otherCollider)
     {
+        //Animator animator = GetComponent<Animator>();
         Attacker attacker = otherCollider.GetComponent<Attacker>();
         if (attacker)
         {
-            // do reaction animation
+            // create animator state change
+            //animator.SetTrigger("underAttack");
         }
     }
 }
