@@ -7,6 +7,7 @@ public class HealthDisplay : MonoBehaviour
 {
     private int lives = 5;
     private Text livesText;
+    [SerializeField] private Text loserText;
     private LevelLoader levelLoader;
     
     
@@ -15,6 +16,7 @@ public class HealthDisplay : MonoBehaviour
     {
         livesText = GetComponent<Text>();
         levelLoader = FindObjectOfType<LevelLoader>();
+        loserText.enabled = false;
         UpdateLives();
     }
 
@@ -28,9 +30,16 @@ public class HealthDisplay : MonoBehaviour
         lives -= 1;
         if (lives <= 0)
         {
-            
+            GameOver();
         }
         UpdateLives();
+    }
+
+    private void GameOver()
+    {
+        livesText.enabled = false;
+        loserText.enabled = true;
+        StartCoroutine(FindObjectOfType<LevelLoader>().LoadStartScreen());
     }
 
     // Update is called once per frame

@@ -29,8 +29,14 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
-    // Update is called once per frame
-    void Update()
+    public IEnumerator LoadStartScreen()
     {
+        yield return new WaitForSeconds(timeToWait);
+        SceneManager.LoadScene("Start Screen");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
