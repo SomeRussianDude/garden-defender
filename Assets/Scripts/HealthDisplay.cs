@@ -35,7 +35,7 @@ public class HealthDisplay : MonoBehaviour
         UpdateLives();
     }
 
-    private void GameOver()
+    public void GameOver()
     {
         livesText.enabled = false;
         loserText.enabled = true;
