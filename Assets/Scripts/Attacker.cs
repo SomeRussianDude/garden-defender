@@ -9,6 +9,16 @@ public class Attacker : MonoBehaviour
     private GameObject currentTarget;
     private Animator animator;
 
+    private void Awake()
+    {
+        FindObjectOfType<LevelController>().AttackerSpawned();
+    }
+
+    private void OnDestroy()
+    {
+        FindObjectOfType<LevelController>().AttackerKilled();
+    }
+
     private void Start()
     {
         animator = GetComponent<Animator>();

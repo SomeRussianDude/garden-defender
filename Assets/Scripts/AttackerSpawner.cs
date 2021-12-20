@@ -20,6 +20,11 @@ public class AttackerSpawner : MonoBehaviour
         }
     }
 
+    public void StopSpawning()
+    {
+        spawn = false;
+    }
+
     private void SpawnEnemies()
     {
        var attackerIndex = Random.Range(0,attackerPrefabs.Length);
