@@ -618,6 +618,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Complete Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2200481980632069645, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433731027558187207, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: c68f7436711393b4ab0ebc7cd4d05a4f, type: 3}
+    - target: {fileID: 2433731027558187207, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433731027558187207, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433731027558187207, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433731027558187207, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251264818740318511, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251264818740318511, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1436.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251264818740318511, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 805.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251264818740318511, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000028133
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251264818740318511, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00001812
+      objectReference: {fileID: 0}
     - target: {fileID: 4744110317431391951, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

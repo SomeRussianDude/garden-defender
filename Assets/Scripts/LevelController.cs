@@ -1,11 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
+    [SerializeField] private GameObject winLabel;
     private int numberOfAttackers = 0;
     private bool levelTimerFinished = false;
+
+
+    private void Start()
+    {
+        winLabel.SetActive(false);
+    }
 
     public void LevelTimerFinished()
     {
@@ -23,9 +31,18 @@ public class LevelController : MonoBehaviour
         numberOfAttackers--;
         if (numberOfAttackers <= 0 && levelTimerFinished)
         {
-            Debug.Log("Level Complete!");
+            StartCoroutine(HandleWin());
         }
     }
+
+    private IEnumerator HandleWin()
+    {
+        winLabel.SetActive(true);
+        GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(4f);
+        GetComponent<LevelLoader>().LoadNextScene();
+    }
+
 
     private void StopSpawners()
     {
