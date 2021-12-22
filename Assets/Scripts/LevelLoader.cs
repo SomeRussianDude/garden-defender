@@ -29,9 +29,15 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
-    public IEnumerator LoadStartScreen()
+    public void RestartScene()
     {
-        yield return new WaitForSeconds(timeToWait);
+        Time.timeScale = 1;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    public void LoadStartScreen()
+    {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Start Screen");
     }
 
