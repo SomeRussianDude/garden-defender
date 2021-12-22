@@ -195,6 +195,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6614622326512181138, guid: ed5f0d291de96e542842ca35c2113c7e, type: 3}
   m_PrefabInstance: {fileID: 1545781414}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &623747626 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1760242874094801425, guid: 2142b185ca78d744ab1cd3086f575616, type: 3}
+  m_PrefabInstance: {fileID: 8061196911205986160}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 975a98db18895174bb71d76cd82e36f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &811141831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1142376523175230077, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
+  m_PrefabInstance: {fileID: 2094134375018332200}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &898916059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6614622326512181138, guid: ed5f0d291de96e542842ca35c2113c7e, type: 3}
@@ -455,6 +471,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1845206330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3318171100009411698, guid: 3f8d6305169078b4faa8e5ee6ad428c8, type: 3}
+  m_PrefabInstance: {fileID: 8201663416208936544}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1892798396
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +676,10 @@ PrefabInstance:
     - target: {fileID: 1142376523175230077, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
       propertyPath: m_Name
       value: Level Complete Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1142376523175230077, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4744110317431391951, guid: caad04a1c90a92d4eaf8ccb0531e9ade, type: 3}
       propertyPath: m_Pivot.x
@@ -997,6 +1022,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 8061196910167710877, guid: 2142b185ca78d744ab1cd3086f575616, type: 3}
+      propertyPath: winLabel
+      value: 
+      objectReference: {fileID: 811141831}
+    - target: {fileID: 8061196910167710877, guid: 2142b185ca78d744ab1cd3086f575616, type: 3}
+      propertyPath: loseLabel
+      value: 
+      objectReference: {fileID: 1845206330}
     - target: {fileID: 8061196910167710878, guid: 2142b185ca78d744ab1cd3086f575616, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1107,9 +1140,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1892798397}
     m_Modifications:
+    - target: {fileID: 720308116, guid: 3f8d6305169078b4faa8e5ee6ad428c8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 623747626}
+    - target: {fileID: 720308116, guid: 3f8d6305169078b4faa8e5ee6ad428c8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadStartScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968665082, guid: 3f8d6305169078b4faa8e5ee6ad428c8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 623747626}
+    - target: {fileID: 1968665082, guid: 3f8d6305169078b4faa8e5ee6ad428c8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartScene
+      objectReference: {fileID: 0}
     - target: {fileID: 3318171100009411698, guid: 3f8d6305169078b4faa8e5ee6ad428c8, type: 3}
       propertyPath: m_Name
       value: Loser Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3318171100009411698, guid: 3f8d6305169078b4faa8e5ee6ad428c8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6917666874924615872, guid: 3f8d6305169078b4faa8e5ee6ad428c8, type: 3}
       propertyPath: m_Pivot.x
