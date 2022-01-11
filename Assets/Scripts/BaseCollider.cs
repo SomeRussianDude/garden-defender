@@ -16,6 +16,7 @@ public class BaseCollider : MonoBehaviour
         if (attacker)
         {
             healthDisplay.LoseLife();
+            Destroy(otherCollider.gameObject);
         }
     }
 }
