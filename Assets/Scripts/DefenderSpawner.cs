@@ -7,7 +7,23 @@ using UnityEngine;
 public class DefenderSpawner : MonoBehaviour
 {
     private Defender defenderPrefab;
-    
+    private GameObject defenderParent;
+    private const string DEFENDER_PARENT_NAME = "Defenders";
+
+    private void Start()
+    {
+        CreateDefenderParent();
+    }
+
+    private void CreateDefenderParent()
+    {
+        defenderParent = GameObject.Find(DEFENDER_PARENT_NAME);
+        if (!defenderParent)
+        {
+            defenderParent = new GameObject(DEFENDER_PARENT_NAME);
+        }
+    }
+
     private void OnMouseDown()
     {
         AttemptToPlaceDefender(GetClickedSquare());
@@ -49,6 +65,7 @@ public class DefenderSpawner : MonoBehaviour
         if (defenderPrefab != null)
         {
             Defender newDefender = Instantiate(defenderPrefab, squarePos, quaternion.identity) as Defender;
+            newDefender.transform.parent = defenderParent.transform;
         }
     }
 }
