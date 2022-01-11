@@ -6,9 +6,13 @@ using UnityEngine.UI;
 
 public class OptionsController : MonoBehaviour
 {
+    [Header("Volume control")]
     [SerializeField] private Slider volumeSlider;
     [SerializeField] private float defaultVolume = 0.8f;
-    
+
+    [Header("Difficulty Control")] [SerializeField]
+    private Slider difficultySlider;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +21,11 @@ public class OptionsController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        VolumeControl();
+    }
+
+    private void VolumeControl()
     {
         var musicPlayer = FindObjectOfType<MusicPlayer>();
         if (musicPlayer)
