@@ -5,13 +5,15 @@ using UnityEngine.UI;
 
 public class HealthDisplay : MonoBehaviour
 {
-    private int lives = 5;
+    private float baseLives = 5f;
+    private float lives;
     private Text livesText;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        lives = baseLives - PlayerPrefsController.GetDifficulty();
         livesText = GetComponent<Text>();
         UpdateLives();
     }
